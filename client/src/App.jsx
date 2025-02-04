@@ -1,12 +1,13 @@
 import './App.css'
-// import StudentLogin from './components/StudentLogin'
-import LoginPage from './components/LoginPage'
+
+// import LoginPage from './components/LoginPage'
+import BdeHome from './components/BDE_Homepage/BdeHome'
 
 function App() {
 
   return (
     <>
-      <LoginPage />
+      <BdeHome />
     </>
   )
 }
