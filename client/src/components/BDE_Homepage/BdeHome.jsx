@@ -12,7 +12,7 @@ const BdeHome = () => {
     return (
         <>
             <Header />
-            <section className="h-screen flex">
+            <section className="min-h-screen flex">
                 <div className="hidden lg:block bg-slate-700 w-[20%]">
                     <ul className="text-white font-semibold text-xl p-4">
                         <li className="pl-3 mb-4 cursor-pointer active:text-blue-600"><FontAwesomeIcon className="pr-3" icon={faHouse} /> Home</li>
