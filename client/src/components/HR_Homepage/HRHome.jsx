@@ -1,17 +1,14 @@
 import SumagoLogo from "../../assets/StudentLoginPageAssets/sumago_logo.png";
 
-// import Header from "../Header";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faClipboardQuestion } from "@fortawesome/free-solid-svg-icons";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
-import BDEEnquiryform from "./BDEEnquiryform";
+import StudentLoginGenerate from "./StudentLoginGenerate";
 
 const BdeHome = () => {
   return (
     <>
-      {/* <Header /> */}
       <section className="h-screen flex">
         <div className="hidden lg:block bg-[#62c5e9] w-[20%]">
           <div>
@@ -43,7 +40,7 @@ const BdeHome = () => {
           </ul>
         </div>
         <div className="flex-1 h-screen overflow-y-auto">
-          <BDEEnquiryform />
+          <StudentLoginGenerate/>
         </div>
       </section>
     </>
