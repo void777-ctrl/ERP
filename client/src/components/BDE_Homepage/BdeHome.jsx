@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { faClipboardQuestion } from '@fortawesome/free-solid-svg-icons';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import BDEEnquiryform from "./BDEEnquiryform";
 
 const BdeHome = () => {
     return (
@@ -20,7 +21,7 @@ const BdeHome = () => {
                     </ul>
                 </div>
                 <div>
-
+                    <BDEEnquiryform />
                 </div>
             </section>
         </>
