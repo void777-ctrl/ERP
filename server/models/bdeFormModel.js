@@ -33,7 +33,7 @@ const bdeFormSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    dob: {
+    dateOfBirth: {
         type: Date,
         required: true,
     },
@@ -64,7 +64,8 @@ const bdeFormSchema = new mongoose.Schema({
         required: true,
     },
     referenceNumber: {
-        type: String
+        type: String,
+        default: null
     },
     modeOfEducation: {
         type: String,
@@ -76,7 +77,7 @@ const bdeFormSchema = new mongoose.Schema({
         required: true,
         enum: ['MERN Full Stack', 'MEAN Full Stack', 'JAVA Full Stack', 'UI/UX Design', 'PHP Full Stack', 'DOT NET Full Stack', 'Python/Django Development', 'DevOps']
     },
-    duration: {
+    courseDuration: {
         type: String,
         required: true,
         enum: ['6 Months', '3 Months']
@@ -96,13 +97,13 @@ const bdeFormSchema = new mongoose.Schema({
         required: true,
         enum: ['S', 'M', 'L', 'XL', 'XXL', '3XL']
     },
-    batchSlot: {
+    batchTimeSlot: {
         type: String,
         required: true,
         enum: ['morning', 'afternoon']
     },
 })
 
-const ERP = mongoose.model('bdeFormData', bdeFormSchema)
+const BDE_DATA = mongoose.model('bdeFormData', bdeFormSchema)
 
-module.exports = ERP
+module.exports = BDE_DATA
