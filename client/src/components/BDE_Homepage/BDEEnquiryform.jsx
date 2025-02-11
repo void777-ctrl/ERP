@@ -106,43 +106,42 @@ const BDEEnquiryform = () => {
               <option value="Select" hidden>Select</option>
               <option value="MERN Full Stack">MERN Full Stack</option>
               <option value="MEAN Full Stack">MEAN Full Stack</option>
-              <option value="Java Full Stack">Java Full Stack</option>
-              <option value="UIUX Design">UIUX Design</option>
+              <option value="JAVA Full Stack">JAVA Full Stack</option>
+              <option value="UI/UX Design">UI/UX Design</option>
               <option value="PHP Full Stack">PHP Full Stack</option>
-              <option value="Dot Net Full Stack">Dot Net Full Stack</option>
+              <option value="DOT NET Full Stack">DOT NET Full Stack</option>
               <option value="Python/Django Development">Python/Django Development</option>
               <option value="DevOps">DevOps</option>
-              <option value="Python/Django Development">Python/Django Development</option>
             </select>
           </div>
           <div>
             <label htmlFor="city" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Duration</label>
             <select name="" id="" className='"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 outline-none hover:border-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required '>
               <option value="Select" hidden>Select</option>
-              <option value="6">6 Months</option>
-              <option value="3">3 Months</option>
+              <option value="6 Months">6 Months</option>
+              <option value="3 Months">3 Months</option>
             </select>
           </div>
 
           <div>
             <label htmlFor="city" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Interested in Placement Reference</label>
             <div className="flex items-center mb-4">
-              <input id="placement_reference_interest_yes" type="radio" value="" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 outline-none hover:border-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+              <input id="placement_reference_interest_yes" type="radio" value="" name="interestInPlacmentReference" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 outline-none hover:border-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
               <label htmlFor="placement_reference_interest_yes" className="ms-2 text-sm font-medium text-black-900 dark:text-black-300">YES</label>
             </div>
             <div className="flex items-center">
-              <input id="placement_reference_interest_no" type="radio" value="" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 outline-none hover:border-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+              <input id="placement_reference_interest_no" type="radio" value="" name="interestInPlacmentReference" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 outline-none hover:border-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
               <label htmlFor="placement_reference_interest_no" className="ms-2 text-sm font-medium text-black-900 dark:text-black-300">NO</label>
             </div>
           </div>
           <div>
             <label htmlFor="city" className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Need PC from Comapny</label>
             <div className="flex items-center mb-4">
-              <input id="need_pc_yes" type="radio" value="" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 outline-none hover:border-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+              <input id="need_pc_yes" type="radio" value="" name="needPC" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 outline-none hover:border-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
               <label htmlFor="need_pc_yes" className="ms-2 text-sm font-medium text-black-900 dark:text-black-300">YES</label>
             </div>
             <div className="flex items-center">
-              <input id="need_pc_no" type="radio" value="" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 outline-none hover:border-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+              <input id="need_pc_no" type="radio" value="" name="needPC" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 outline-none hover:border-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
               <label htmlFor="need_pc_no" className="ms-2 text-sm font-medium text-black-900 dark:text-black-300">NO</label>
             </div>
           </div>
