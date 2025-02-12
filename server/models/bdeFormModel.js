@@ -45,6 +45,7 @@ const bdeFormSchema = new mongoose.Schema({
     bloodGroup: {
         type: String,
         required: true,
+        enum: ['O+', 'O-', 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-']
     },
     education: {
         type: String,
@@ -104,6 +105,6 @@ const bdeFormSchema = new mongoose.Schema({
     },
 })
 
-const BDE_DATA = mongoose.model('bdeFormData', bdeFormSchema)
+const BDE_DATA = mongoose.model('bde_Form_Data', bdeFormSchema)
 
 module.exports = BDE_DATA

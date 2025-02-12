@@ -10,6 +10,8 @@ const bdeRoute = require('./routes/bdeDataRoutes')
 
 
 // Middlewares
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 
 
 // DOTENV IMPORT
@@ -26,7 +28,7 @@ connectMongoDB(mongoURL)
 
 
 // Routing
-app.use('/', bdeRoute)
+app.use('/bde', bdeRoute)
 
 
 // Server Hosting
