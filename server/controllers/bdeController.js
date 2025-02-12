@@ -169,6 +169,19 @@ async function registerBdeFormData(req, res) {
   }
 }
 
+// GET - Get Student Data from BDE collection
+async function fetchStudentData(req, res) {
+    try {
+        const studentData = await BDE_DATA.find({})
+        if (studentData.length === 0) return res.status(400).json({ message: 'No data found' })
+        res.status(200).json({ studentData })
+    } catch (error) {
+        console.log(error)
+        res.status(400).json({  message: 'Something went wrong', error: error.message })
+    }
+}
+
 module.exports = {
     registerBdeFormData,
+    fetchStudentData
 }

@@ -1,8 +1,8 @@
 import './App.css'
 
 // import BdeHome from './components/BDE_Homepage/BdeHome'  
-// import HRHome from './components/HR_Homepage/HRHome'
-import Admin from './components/Admin_Homepage/AdminHome'
+import HRHome from './components/HR_Homepage/HRHome'
+// import Admin from './components/Admin_Homepage/AdminHome'
 // import Login from './components/LoginPage'
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       {/* <BdeHome /> */}
-      {/* <HRHome/> */}
-      <Admin/>
+      <HRHome/>
+      {/* <Admin/> */}
       {/* <Login/> */}
     </>
   )

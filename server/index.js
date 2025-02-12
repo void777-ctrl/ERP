@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 
 // IMPORT MODULES
@@ -12,6 +13,7 @@ const bdeRoute = require('./routes/bdeDataRoutes')
 // Middlewares
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+app.use(cors())
 
 
 // DOTENV IMPORT

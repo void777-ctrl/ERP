@@ -2,8 +2,8 @@ import { useState } from "react";
 import SumagoLogo from "../../assets/StudentLoginPageAssets/sumago_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faClipboardQuestion, faRightFromBracket, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import StudentLoginGenerate from "./StudentLoginGenerate";
-import HRStudentData from "./HRStudentData";
+import StudentLoginGenerate from './StudentLoginGenerate'
+import HRStudentData from './HRStudentData'
 
 const BdeHome = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
