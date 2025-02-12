@@ -6,10 +6,12 @@ const app = express()
 
 // IMPORT FUNCTIONS
 const { connectMongoDB } = require('./connection')
-const erpRoute = require('./routes/erpRoutes')
+const bdeRoute = require('./routes/bdeDataRoutes')
 
 
 // Middlewares
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 
 
 // DOTENV IMPORT
@@ -20,13 +22,13 @@ const mongoURL = process.env.mongoURL
 
 
 // MongoDB Connection
-connectToMongoDB(mongoURL)
+connectMongoDB(mongoURL)
 .then(() => console.log('MongoDB Connected Successfully'))
 .catch((error) => console.log('Something went wrong while connecting to MongoDB - ', error))
 
 
 // Routing
-app.use('/', erpRoute)
+app.use('/bde', bdeRoute)
 
 
 // Server Hosting
